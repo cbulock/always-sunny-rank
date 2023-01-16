@@ -1,0 +1,57 @@
+.card {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 16px;
+  align-items: center;
+  position: relative;
+  margin: 1em;
+  padding: 2em;
+  border: 1px solid white;
+  border-radius: 8px;
+  &:hover {
+    .characterRank .image {
+      animation: head-bop 1.5s ease-in-out;
+    }
+  }
+  h1 {
+    font-size: 1.2rem;
+  }
+  .episode {
+    color: var(--secondary-color);
+    position: absolute;
+    bottom: 4px;
+    right: 12px;
+  }
+}
+
+.characterRank {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .number {
+    position: absolute;
+    top: calc(50% - 1.5rem);
+    left: calc(50% - 2rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 3rem;
+    font-size: 3rem;
+    font-weight: 900;
+    -webkit-text-stroke: 2px var(--background-color);
+  }
+}
+
+@keyframes head-bop {
+  0%, 100% {
+    transform: rotate(0) scale(1);
+  }
+  33% {
+    transform: rotate(40deg) scale(1.2);
+  }
+  66% {
+    transform: rotate(-40deg) scale(1.2);
+  }
+}

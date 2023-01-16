@@ -1,0 +1,8 @@
+.main {
+    margin: 1em;
+    display: grid;
+    justify-content: center;
+    &> h1 {
+        text-align: center;
+    }
+}

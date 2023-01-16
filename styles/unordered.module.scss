@@ -1,0 +1,13 @@
+.main {
+  margin: 1em;
+  display: grid;
+  justify-content: center;
+}
+
+.table {
+  margin: 0.5em;
+  display: grid;
+  grid-template-columns: 24px auto 1fr;
+  align-items: center;
+  gap: 10px;
+}
